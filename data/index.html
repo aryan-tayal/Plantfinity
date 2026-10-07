@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indoor Plant Grower</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <h1 class="my-5 text-center display-3">Indoor Plant Grower</h1>
+    <!-- Alerts -->
+    <div class="container" id="alert-container"></div>
+
+    <!-- Charts -->
+    <div class="row p-5">
+      <div class="col-lg-6 mb-5">
+        <div id="chart-soil-humidity"></div>
+        <button class="btn btn-outline-danger d-block w-50 mx-auto" onclick="clearData('soilhumidity')">
+          Clear Soil Humidity Data
+        </button>
+      </div>
+      <div class="col-lg-6 mb-5">
+        <div id="chart-temperature"></div>
+        <button class="btn btn-outline-danger d-block w-50 mx-auto" onclick="clearData('temperature')">
+          Clear Temperature Data
+        </button>
+      </div>
+      <div class="col-lg-6 mb-5">
+        <div id="chart-humidity"></div>
+        <button class="btn btn-outline-danger d-block w-50 mx-auto" onclick="clearData('humidity')">
+          Clear Humidity Data
+        </button>
+      </div>
+      <div class="col-lg-6 mb-5">
+        <div id="chart-growth"></div>
+        <button class="btn btn-outline-danger d-block w-50 mx-auto" onclick="clearData('growth')">
+          Clear Plant Growth Data
+        </button>
+      </div>
+    </div>
+
+    <button class="btn btn-danger btn-lg text-center d-block mx-auto mb-5" id="clearBtn">
+      Clear All Data
+    </button>
+
+    <footer class="bg-dark text-light p-3 text-center">
+      &copy; Aryan Tayal 2022
+    </footer>
+    <!-- Axios Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Highcharts Scripts -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <!-- Served JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
